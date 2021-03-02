@@ -18,6 +18,15 @@ try {
 
 if ( $PDOX !== false ) LTIX::loginSecureCookie();
 
+$R = $CFG->apphome . '/';
+$T = $CFG->wwwroot . '/';
+$set = new \Tsugi\UI\MenuSet();
+$set->setHome($CFG->servicename, $CFG->apphome);
+if ( isset($CFG->lessons) ) {
+        $set->addLeft('Lessons', $R.'lessons');
+}
+$OUTPUT->topNavSession($set);
+
 $OUTPUT->header();
 ?>
 <style>

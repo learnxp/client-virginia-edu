@@ -1,0 +1,31 @@
+{
+"title": "Sample Lessons",
+"description" : "This is a one module lesson.",
+"count": true,
+"modules": [
+{
+    "title": "One Module",
+    "anchor": "week1",
+    "icon" : "fa-globe",
+    "description": "A single example module",
+        "videos" : [
+        {
+            "title" : "A Threaded Discussion Tool",
+            "youtube" : "_be5vBiljng"
+        }
+    ],
+       "lti" : [
+        {
+            "title" : "Trophy",
+            "launch" : "mod/trophy/",
+            "resource_link_id" : "trophy"
+        },
+        {
+            "title" : "LMsTest",
+            "launch" : "mod/lmstest/",
+            "resource_link_id" : "lmstest"
+        }
+    ]
+}
+]
+}
